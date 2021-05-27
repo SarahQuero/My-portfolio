@@ -1,60 +1,51 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Sarah Quéro</title>
+        {/* TODO change the icon  */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Hi, I'm
+          <br />
+          Sarah Quéro,
+          <br />
+          front-end developer.
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Formerly Digital Project Manager, I decided to take a 5 months
+          intensive training programme in order to become a Full Stack Web
+          Developer.
+          <br />
+          I specialized in Javascript, HTML and CSS langages and I'm using
+          libraries and frameworks such as React, React Native and NodeJS.
+          <br />
+          I have a good understanding of the client's needs and have a
+          particular interest in design thinking and how to optimize user
+          experience.
+          <br />
+          Curious, rigorous and product-oriented, I'm currently seeking for new
+          challenges.
+          <br />
+          Please take a moment and have a look to my portfolio and discover all
+          the projects I realized so far.
         </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
       </main>
 
       <footer>
+        {/* TODO put Linkedin, Github and mail links */}
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
@@ -205,5 +196,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
