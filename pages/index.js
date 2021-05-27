@@ -1,13 +1,30 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
         <title>Sarah Quéro</title>
-        {/* TODO change the icon  */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/sakura.ico" />
       </Head>
+
+      <header>
+        <Link href="/projects">
+          <a>Projects</a>
+        </Link>
+        <Link href="/experiences">
+          <a>Experiences</a>
+        </Link>
+
+        <a
+          href="/assets/cv-sarah-quero.png"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+      </header>
 
       <main>
         <h1 className="title">
@@ -39,14 +56,32 @@ export default function Home() {
       </main>
 
       <footer>
-        {/* TODO put Linkedin, Github and mail links */}
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://www.linkedin.com/in/sarah-quero/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icons"
+        >
+          <img src="https://img.icons8.com/doodle/96/000000/linkedin--v2.png" />
+        </a>
+
+        <a
+          href="https://github.com/SarahQuero"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icons"
+        >
+          <img
+            src="https://img.icons8.com/plasticine/100/000000/github.png"
+            alt="github"
+          />
+        </a>
+        <a
+          href="mailto:sarahquero@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          <img src="https://img.icons8.com/doodle/96/000000/apple-mail.png" />
         </a>
       </footer>
 
